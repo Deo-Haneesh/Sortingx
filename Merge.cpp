@@ -47,9 +47,12 @@ void mergeSort(vector<int> &arr, int low, int high) {
 }
 
 int main() {
-
-    vector<int> arr = {9, 4, 7, 6, 3, 1, 5}  ;
-    int n = 7;
+    int n;
+    cin>>n;
+    vector<int> arr(n);
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
 
     cout << "Before Sorting Array: " << endl;
     for (int i = 0; i < n; i++) {
